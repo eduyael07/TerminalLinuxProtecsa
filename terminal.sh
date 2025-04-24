@@ -34,7 +34,7 @@ while true; do
         creditos)
             ./comandos/creditos.sh
             ;;
-        juego)
+        ahorcado)
             ./juegos/ahorcado.sh
             ;;
         reproductor)
