@@ -9,3 +9,6 @@ echo "infosis       ->      muestra informacion del sistema"
 echo "ahorcado      ->      pasar un buen rato jugando ahorcado"
 echo "reproductor   ->      reproductor de musica (Presiona Q para detener la musica)"
 echo "Salir         ->      salir de la terminal"
+
+echo
+read -p "Presiona Enter para volver al menú..."
