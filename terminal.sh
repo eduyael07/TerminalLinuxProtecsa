@@ -4,6 +4,14 @@
 stty intr undef  # Desactiva Ctrl+C (SIGINT)
 stty susp undef  # Desactiva Ctrl+Z (SIGTSTP)
 
+# Definición de colores
+RED="\e[31m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+CYAN="\e[36m"
+WHITE="\e[37m"
+RESET="\e[0m"
+
 clear
 echo -e "${GREEN}"
 cat << "EOF"
@@ -22,7 +30,8 @@ usuario=$(whoami)
 while true; do
     echo
     ruta=$(pwd)
-    read -p "$usuario:$ruta$ " comando
+    # Mostrar prompt con colores
+    read -e -p "$(echo -e "${CYAN}${usuario}${RESET}:${YELLOW}${ruta}${RESET}$ ")" comando
 
     case "$comando" in
         ayuda)
@@ -52,9 +61,8 @@ while true; do
             ;;
         *)
             if ! eval "$comando" 2>/dev/null; then
-                echo "Comando no reconocido. Escribe 'ayuda' para ver los comandos disponibles."
+                echo -e "${RED}Comando no reconocido. Escribe 'ayuda' para ver los comandos disponibles.${RESET}"
             fi
             ;;
-
     esac
 done
