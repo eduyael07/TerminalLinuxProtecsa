@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#Comando para ajustar a la hora local: sudo timedatectl set-local-rtc 1
 # Función para obtener fecha y hora desde RTC
 obtener_fecha_hora() {
     local rtc_file="/proc/driver/rtc"
