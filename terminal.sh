@@ -45,10 +45,10 @@ while true; do
             break
             ;;
         *)
-            eval "$comando"
-            if [ $? -ne 0 ]; then
+            if ! eval "$comando" 2>/dev/null; then
                 echo "Comando no reconocido. Escribe 'ayuda' para ver los comandos disponibles."
-            fi 
+            fi
             ;;
+
     esac
 done
