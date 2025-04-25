@@ -16,8 +16,8 @@ obtener_fecha_hora() {
     hora=$(awk '/rtc_time/ {print $3}' "$rtc_file" 2>/dev/null)
 
     # Mostrar resultados
-    printf "Fecha (RTC): %s\n" "$fecha_hora"
-    printf "Hora (RTC): %s\n" "$hora"
+    printf "Fecha: %s\n" "$fecha_hora"
+    printf "Hora: %s\n" "$hora"
 }
 
 # Llamar a la función principal
