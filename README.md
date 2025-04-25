@@ -32,8 +32,8 @@ Para ejecutar este proyecto, es necesario tener un sistema GNU/Linux con Bash. A
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/terminal-linux-yael.git
-cd terminal-linux-yael
+git clone https://github.com/eduyael07/TerminalLinuxProtecsa.git
+cd TermialLinuxProtecsa
 ```
 
 2. Da permisos de ejecución a los scripts:
