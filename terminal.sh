@@ -5,11 +5,17 @@ stty intr undef  # Desactiva Ctrl+C (SIGINT)
 stty susp undef  # Desactiva Ctrl+Z (SIGTSTP)
 
 clear
-echo "=========================================="
-echo "     TERMINAL PERSONALIZADA EN BASH       "
-echo "        Proyecto final del curso Linux    "
-echo "     Escribe 'ayuda' para ver los comandos"
-echo "=========================================="
+echo -e "${GREEN}"
+cat << "EOF"
+=====================================================================================================================                                        
+___                         _                                       _  _  __   
+ |  _  ____  o __  _  |    |_) _  __ _  _ __  _  | o _  _  _| _    |_)|_|(_ |_|
+ | (/_ | ||| | | |(_| |    |  (/_ | _> (_)| |(_| | | /_(_|(_|(_|   |_)| |__)| |
+
+ ESCRIBE 'AYUDA' PARA VER LOS COMANDOS
+
+=====================================================================================================================
+EOF
 
 usuario=$(whoami)
 
