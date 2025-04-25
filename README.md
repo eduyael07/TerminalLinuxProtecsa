@@ -39,7 +39,7 @@ cd terminal-linux-yael
 2. Da permisos de ejecución a los scripts:
 
 ```bash
-chmod +x main.sh shell.sh comandos/*.sh
+chmod +x comandos/*.sh
 ```
 
 3. Ejecuta el script principal:
