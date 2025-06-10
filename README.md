@@ -1,49 +1,26 @@
 
-# TerminalLinuxProtecsa
+# Terminal Bash Personalizada
 
-##  Proyecto Terminal Linux
+Una terminal de trabajo en Bash diseñada como proyecto final de capacitación en Linux. Incluye un sistema de acceso, comandos personalizados, un juego textual, un reproductor de música con interfaz gráfica y documentación.
 
-Este proyecto consiste en la creación de una terminal de trabajo personalizada en **Bash** que simula un entorno de línea de comandos. El objetivo es poner en práctica los conocimientos adquiridos en el curso de Linux y demostrar habilidades de scripting, desarrollo de comandos personalizados y uso de herramientas del sistema operativo.
+## 📌 Descripción breve
 
-##  Objetivo
+Esta terminal simula un entorno personalizado para usuarios en sistemas Linux. Permite autenticación de usuarios y la ejecución de diversos comandos educativos y lúdicos.
 
-El proyecto tiene como finalidad desarrollar un programa que simule una terminal de trabajo. La terminal debe permitir al usuario trabajar con archivos, consultar información del sistema, reproducir música y jugar juegos desarrollados por el usuario. Los siguientes comandos son implementados:
+## 🚧 Estado del proyecto
 
-- **Comandos personalizados**: 
-  - `ayuda`: Muestra los comandos disponibles.
-  - `infosis`: Muestra información del sistema (RAM, arquitectura, versión del SO).
-  - `fecha`: Muestra la fecha y hora actual.
-  - `buscar`: Busca archivos en un directorio específico.
-  - `creditos`: Muestra los créditos del programador.
-  - `juego`: Juega un juego textual (Ahorcado o Gato).
-  - `mp3`: Reproductor de música con interfaz gráfica.
+✅ Completado – funcional y listo para evaluación.  
+📅 Fecha de entrega: 26 de abril de 2025.
 
-##  Requisitos de Instalación
+## 🖼️ Capturas
 
-Para ejecutar este proyecto, es necesario tener un sistema GNU/Linux con Bash. Asegúrate de contar con lo siguiente:
+![Inicio de sesión](capturas/login.png)  
+![Menú principal](capturas/menu_principal.png)  
+![Juego del ahorcado](capturas/juego.png)  
 
-- **Bash** (v4 o superior)
-- **Zenity** para la interfaz gráfica del reproductor de música (`sudo apt install zenity` en Debian/Ubuntu)
-- **unzip** y **file** (`sudo apt install unzip file`)
-- **Permisos de ejecución** en los scripts (`chmod +x nombre_script.sh`)
-
-##  Instalación y Ejecución
-
-1. Clona el repositorio:
+## ⚙️ Instalación rápida
 
 ```bash
-git clone https://github.com/eduyael07/TerminalLinuxProtecsa.git
-cd TermialLinuxProtecsa
-```
-
-2. Da permisos de ejecución a los scripts:
-
-```bash
-chmod +x comandos/*.sh
-```
-
-3. Ejecuta el script principal:
-
-```bash
-./main.sh
-``` 
+git clone https://github.com/usuario/terminal-bash.git
+cd terminal-bash
+bash main.sh

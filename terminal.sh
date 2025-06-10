@@ -57,6 +57,7 @@ while true; do
             ;;
         salir)
             echo "Cerrando sesión..."
+            clear
             break
             ;;
         *)

@@ -3,7 +3,7 @@
 # Juego del Ahorcado simplificado
 
 # Palabra secreta
-palabra="programacion"
+palabra="hola"
 intentos=6
 letras_adivinadas=()
 letras_incorrectas=()
